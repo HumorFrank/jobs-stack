@@ -39,7 +39,7 @@ export function JobFilters({
         <SelectTrigger className={`${selectClass} sm:w-[160px]`}>
           {selectedCategory === 'all' ? '职位类别' : selectedCategory}
         </SelectTrigger>
-        <SelectContent className="bg-surface-elevated border-border-subtle">
+        <SelectContent>
           <SelectItem value="all" className="text-text-secondary focus:text-text-primary focus:bg-accent-muted">全部类别</SelectItem>
           {categories.map((cat) => (
             <SelectItem key={cat} value={cat} className="text-text-secondary focus:text-text-primary focus:bg-accent-muted">
@@ -53,7 +53,7 @@ export function JobFilters({
         <SelectTrigger className={`${selectClass} sm:w-[140px]`}>
           {selectedLocation === 'all' ? '工作地点' : selectedLocation}
         </SelectTrigger>
-        <SelectContent className="bg-surface-elevated border-border-subtle">
+        <SelectContent>
           <SelectItem value="all" className="text-text-secondary focus:text-text-primary focus:bg-accent-muted">全部地点</SelectItem>
           {locations.map((loc) => (
             <SelectItem key={loc} value={loc} className="text-text-secondary focus:text-text-primary focus:bg-accent-muted">
@@ -67,7 +67,7 @@ export function JobFilters({
         <SelectTrigger className={`${selectClass} sm:w-[140px]`}>
           {selectedType === 'all' ? '工作类型' : JOB_TYPE_LABELS[selectedType as JobType]}
         </SelectTrigger>
-        <SelectContent className="bg-surface-elevated border-border-subtle">
+        <SelectContent>
           <SelectItem value="all" className="text-text-secondary focus:text-text-primary focus:bg-accent-muted">全部类型</SelectItem>
           {types.map((t) => (
             <SelectItem key={t.value} value={t.value} className="text-text-secondary focus:text-text-primary focus:bg-accent-muted">

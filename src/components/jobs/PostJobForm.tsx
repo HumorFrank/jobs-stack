@@ -144,7 +144,7 @@ export function PostJobForm({ onSubmit }: PostJobFormProps) {
               <SelectTrigger className={`${selectClass} ${errors.location ? errorBorder : ''}`}>
                 {form.location || '选择地点'}
               </SelectTrigger>
-              <SelectContent className="bg-surface-elevated border-border-subtle">
+              <SelectContent>
                 {POST_JOB_FILTERS.locations.map((loc) => (
                   <SelectItem key={loc} value={loc} className="text-text-secondary focus:text-text-primary focus:bg-accent-muted">
                     {loc}
@@ -161,7 +161,7 @@ export function PostJobForm({ onSubmit }: PostJobFormProps) {
               <SelectTrigger className={`${selectClass} ${errors.category ? errorBorder : ''}`}>
                 {form.category || '选择类别'}
               </SelectTrigger>
-              <SelectContent className="bg-surface-elevated border-border-subtle">
+              <SelectContent>
                 {POST_JOB_FILTERS.categories.map((cat) => (
                   <SelectItem key={cat} value={cat} className="text-text-secondary focus:text-text-primary focus:bg-accent-muted">
                     {cat}
@@ -178,7 +178,7 @@ export function PostJobForm({ onSubmit }: PostJobFormProps) {
               <SelectTrigger className={selectClass}>
                 {JOB_TYPE_LABELS[form.type]}
               </SelectTrigger>
-              <SelectContent className="bg-surface-elevated border-border-subtle">
+              <SelectContent>
                 {POST_JOB_FILTERS.types.map((t) => (
                   <SelectItem key={t.value} value={t.value} className="text-text-secondary focus:text-text-primary focus:bg-accent-muted">
                     {t.label}
