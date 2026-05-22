@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(rm -rf node_modules package-lock.json)",
+      "Bash(pnpm install *)",
+      "Bash(pnpm add *)",
+      "Bash(npx shadcn@latest init -d -y)",
+      "Bash(npx shadcn@latest add button card input select badge separator sheet -y)",
+      "Bash(npx tsc *)",
+      "Bash(pnpm run *)",
+      "Bash(pnpm build *)",
+      "Bash(npx shadcn@latest add button card input select badge separator sheet -y --overwrite)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(npx shadcn@latest add textarea label -y --overwrite)"
+    ]
+  }
+}
