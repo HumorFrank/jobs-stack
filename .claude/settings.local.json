@@ -12,7 +12,12 @@
       "Bash(pnpm build *)",
       "Bash(npx shadcn@latest add button card input select badge separator sheet -y --overwrite)",
       "Bash(curl -s http://localhost:5173)",
-      "Bash(npx shadcn@latest add textarea label -y --overwrite)"
+      "Bash(npx shadcn@latest add textarea label -y --overwrite)",
+      "Bash(cp -r jobs-board/public .)",
+      "Bash(cp -r jobs-board/src .)",
+      "Bash(cp jobs-board/components.json .)",
+      "Bash(cp jobs-board/index.html .)",
+      "Bash(cp jobs-board/package.json .)"
     ]
   }
 }
