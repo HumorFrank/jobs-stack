@@ -28,3 +28,8 @@ coverage/
 
 # Vite
 *.local
+
+# Claude Code 本地/敏感配置
+.claude/settings.local.json
+.mcp.json
+
